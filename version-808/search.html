@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 久久在线</title>
+  <meta name="description" content="久久在线搜索页面，可按片名、题材、地区、年份查找国产短剧、电影与剧集内容。">
+  <meta name="keywords" content="国产短剧,免费短剧,都市短剧,古装短剧,甜宠短剧,短剧资源,在线观看,每日更新,热门题材,追剧,影片搜索">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="久久在线">
+      <span class="brand-icon">▶</span>
+      <span>久久在线</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <a href="./movies.html">全部影片</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">热播榜</a>
+      <a href="./search.html">搜索</a>
+      <div class="nav-dropdown">
+        <button type="button">分类</button>
+        <div><a href="./categories/city-drama.html">都市短剧</a><a href="./categories/costume-drama.html">古装剧场</a><a href="./categories/sweet-romance.html">甜宠爱情</a><a href="./categories/mystery-suspense.html">悬疑推理</a><a href="./categories/action-crime.html">动作犯罪</a><a href="./categories/comedy-hits.html">喜剧精选</a></div>
+      </div>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索片名、题材、地区" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="./index.html">首页</a>
+    <a href="./movies.html">全部影片</a>
+    <a href="./categories.html">分类总览</a>
+    <a href="./rankings.html">热播榜</a>
+    <a href="./search.html">搜索</a>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <div class="container">
+    <a class="back-link" href="./index.html">← 返回首页</a>
+    <h1>搜索影片</h1>
+    <p>输入片名、题材、地区或年份，快速查找久久在线影片内容。</p>
+  </div>
+</section>
+  <section class="content-section light-section">
+    <div class="container">
+      <div class="search-panel">
+        <form class="large-search" data-search-form>
+          <input type="search" name="q" placeholder="搜索片名、题材、地区、年份" aria-label="搜索影片" data-search-input>
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+      <div class="result-bar"><h1>搜索结果</h1><span data-search-count>请输入关键词</span></div>
+      <div class="movie-grid" data-search-results></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="./index.html">久久在线</a>
+      <p>精选国产免费短剧资源，涵盖都市、古装、甜宠等热门题材，每日更新，满足你的追剧需求！</p>
+    </div>
+    <div>
+      <h2>快速浏览</h2>
+      <a href="./movies.html">全部影片</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">热播榜</a>
+      <a href="./search.html">搜索影片</a>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <div class="footer-categories"><a href="./categories/city-drama.html">都市短剧</a><a href="./categories/costume-drama.html">古装剧场</a><a href="./categories/sweet-romance.html">甜宠爱情</a><a href="./categories/mystery-suspense.html">悬疑推理</a><a href="./categories/action-crime.html">动作犯罪</a><a href="./categories/comedy-hits.html">喜剧精选</a><a href="./categories/sci-fi-fantasy.html">科幻奇幻</a><a href="./categories/family-drama.html">家庭剧情</a><a href="./categories/youth-inspiration.html">青春励志</a><a href="./categories/global-movies.html">海外佳片</a></div>
+    </div>
+  </div>
+</footer>
+<script src="./assets/js/site.js"></script>
+<script src="assets/js/search-data.js"></script>
+<script src="assets/js/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
